@@ -1,0 +1,117 @@
+<!-- <mat-toolbar> 
+    <div class ="header">
+        <app-nav-header></app-nav-header>
+
+    </div>
+   
+</mat-toolbar>
+
+<mat-sidenav-container>
+
+    
+    <mat-sidenav #sidenav mode ="side" opened ="true">
+        <mat-nav-list>
+          <mat-list-item>
+              <mat-icon mat-list-icon class ="chevron_button sidenav-button" (click)="isExpanded =!isExpanded" 
+              [ngClass]="{rotated:isExpanded}"
+              >toc</mat-icon>
+          </mat-list-item>
+        <mat-list-item>
+            <mat-icon mat-list-icon class ="">person_outline</mat-icon>
+            <span *ngIf ="isExpanded">details</span>
+        </mat-list-item>
+
+      <mat-list-item>
+            <mat-icon mat-list-icon class ="">photo_library</mat-icon>
+            <span *ngIf ="isExpanded">libray</span>
+        </mat-list-item>
+        
+        <mat-list-item>
+            <mat-icon mat-list-icon class ="">av_timer</mat-icon>
+            <span  *ngIf ="isExpanded">timer</span>
+        </mat-list-item>
+        <mat-list-item>
+            <mat-icon mat-list-icon class ="">message</mat-icon>
+            <span *ngIf ="isExpanded">message</span>
+        </mat-list-item>
+        <mat-list-item>
+            <mat-icon mat-list-icon class ="">list alt icon</mat-icon>
+            <span *ngIf ="isExpanded">list</span>
+        </mat-list-item>
+        
+        <mat-list-item>
+            <mat-icon mat-list-icon class ="">help outline icon</mat-icon>
+            <span *ngIf ="isExpanded">help</span>
+        </mat-list-item>
+        </mat-nav-list>
+         
+    </mat-sidenav>
+    
+   
+    <app-contacts></app-contacts>
+</mat-sidenav-container> -->
+
+<div class="app-container">
+    <mat-sidenav-container>
+
+        <!-- <mat-sidenav mode="over">
+            <div>item 1</div>
+            <div>item 2</div>
+            <div>item 3</div>
+        </mat-sidenav> -->
+
+        <mat-sidenav #sidenav mode ="side" opened ="true">
+            <mat-nav-list>
+              <mat-list-item>
+                  <mat-icon mat-list-icon class ="chevron_button sidenav-button" (click)="isExpanded =!isExpanded" 
+                  [ngClass]="{rotated:isExpanded}"
+                  >toc</mat-icon>
+              </mat-list-item>
+            <mat-list-item>
+                <mat-icon mat-list-icon class ="">person_outline</mat-icon>
+                <span *ngIf ="isExpanded">details</span>
+            </mat-list-item>
+    
+          <mat-list-item>
+                <mat-icon mat-list-icon class ="">photo_library</mat-icon>
+                <span *ngIf ="isExpanded">libray</span>
+            </mat-list-item>
+            
+            <mat-list-item>
+                <mat-icon mat-list-icon class ="">av_timer</mat-icon>
+                <span  *ngIf ="isExpanded">timer</span>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon mat-list-icon class ="">message</mat-icon>
+                <span *ngIf ="isExpanded">message</span>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon mat-list-icon class ="">list alt icon</mat-icon>
+                <span *ngIf ="isExpanded">list</span>
+            </mat-list-item>
+            
+            <mat-list-item>
+                <mat-icon mat-list-icon class ="">help outline icon</mat-icon>
+                <span *ngIf ="isExpanded">help</span>
+            </mat-list-item>
+            </mat-nav-list>
+             
+        </mat-sidenav>
+
+        
+             
+            <mat-toolbar> 
+                <div class ="header">
+                    <app-nav-header></app-nav-header>
+            
+                </div>
+               
+             
+        </mat-toolbar>
+
+        <div class="app-body">
+            <router-outlet></router-outlet>
+        </div>
+
+    </mat-sidenav-container>
+<div>

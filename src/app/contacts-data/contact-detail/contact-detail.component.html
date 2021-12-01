@@ -1,0 +1,55 @@
+<div class="detail mb-5">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pb-4 pt-2">
+              <span class="circle ml-4">
+                <i class="fa fa-user-o fa-3x" aria-hidden="true"></i>
+              </span>
+              <span
+                ><button class="btn pull-right" (click)="onEditContact()">
+                  <i class="fa fa-pencil"></i></button
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="col-md-12">
+            <div>
+              <p>{{ contact.fullname }}</p>
+              <p>{{ contact.company }}</p>
+            </div>
+          </div>
+        </div>
+  
+        <div>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td class="text-right">Full Name</td>
+                <td>{{ contact.fullname }}</td>
+              </tr>
+              <tr>
+                <td class="text-right">Email</td>
+                <td>{{ contact.email }}</td>
+              </tr>
+              <tr>
+                <td class="text-right">Phone</td>
+                <td>{{ contact.phone }}</td>
+              </tr>
+              <tr>
+                <td class="text-right">Company</td>
+                <td>{{ contact.company }}</td>
+              </tr>
+              <tr>
+                <td class="text-right">Address</td>
+                <td>{{ contact.address }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  

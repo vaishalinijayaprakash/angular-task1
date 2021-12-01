@@ -1,0 +1,86 @@
+     
+th{
+       background-color: rgba(220, 220, 220, 0.226);
+       border-radius: 2px;
+       border-bottom:unset!important;
+       font-weight:400;
+       color:grey;
+       font-size:15px;
+   }
+   .table{
+       top:-8.5rem;
+       position: relative;
+       background-color: white;
+       width:100%;
+       overflow-y: scroll;
+       border-collapse: collapse;
+   }
+   th{
+       height:50px;
+       padding-bottom:19px;
+        
+   }
+/* .header{
+    border-bottom:unset;
+} */
+   td,tr{
+     border-bottom: unset;
+     border-spacing: unset;
+     padding:0px;
+     line-height: 1px;
+       
+ }
+ input[type="checkbox"]{
+     margin:29px 20px;
+      
+
+    
+ }
+
+  th>.check{
+     font-weight: 700;
+     margin: left 20px !important;
+ }
+ 
+ tr:nth-child(even) 
+ {
+     background-color: #f2f2f2;}
+
+     .img>img{
+         top:20px;
+         position: relative;
+         margin-left:-5px;
+     }
+    .img>span>p{
+        transform: translatey(-30px);
+        left:40px;
+        margin-left: 5px;
+        position: relative;
+        top:25px;
+    } 
+
+    .email{
+        font-size:15px;
+        color:rgba(128, 128, 128, 0.699)
+       
+    }
+.com{
+    margin-left:-10px;
+    padding-right:20px ;
+}
+    .fullname{
+        font-size:20px;
+      padding-bottom: 10px;
+        font-weight:400;  
+    }
+    .Company{
+        font-size:15px;
+          margin-top:37px;
+        
+        position: relative;
+
+    }
+    .pull-right{
+     top:-7rem;
+     position: relative;
+    }

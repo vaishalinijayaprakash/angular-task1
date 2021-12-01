@@ -1,0 +1,45 @@
+  <table class="table ">
+            <thead>
+            <tr class="header">
+              <th class ="check">+</th>
+              <th class ="basic">Basic info</th>
+              <th class ="com">comapny</th>
+             
+              
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let cust of contacts | paginate: { itemsPerPage: 5, currentPage: p } ; let i = index"  
+            [routerLink] ="[i]"  
+            routerLinkActive ="active"
+            (click)="onclick(cust.fullname)" 
+            >
+              <td> <input type ="checkbox">
+               
+              <td class ="img">
+                 <img src ="../../../assets/img/avatardefault_92824.png" style ="width:40px;">
+               <span>
+                <p class ="fullname"> {{cust.fullname }}</p>
+                <p class ="email"> {{cust.email}}</p>
+               </span> <!-- <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="mr-2" style="width: 20px"> -->
+               
+              </td>
+              <td> 
+              <p class ="Company">{{ cust.company }} 
+
+                </p>
+              </td>
+ 
+            </tr>
+            </tbody>
+          </table>
+          <p class ="text-center align-items-center" *ngIf ="contacts.length ===0">
+            <Strong> No Contacts availabel</Strong>
+          </p>
+          <div class="pull-right">
+            <pagination-controls
+              class="my-pagination"
+              (pageChange)="p = $event"
+            ></pagination-controls>
+          </div>
+ 

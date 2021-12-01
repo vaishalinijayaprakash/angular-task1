@@ -1,0 +1,55 @@
+   body{
+       overflow: hidden;
+      
+   }
+   
+   mat-toolbar{
+      left:50px;
+      height:50px;
+      background-color: white;
+      border-bottom:2px solid rgba(128, 128, 128, 0.151)!important;
+        
+       
+  }
+  
+  mat-sidenav{
+    background: #ff9966;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  }
+  
+   
+   
+ mat-sidenav-container{
+     height:100%;
+     background-color:white;
+ }
+ mat-icon{
+     color:white;
+ }
+ .content{
+     margin:20px;
+     /* margin-left:32px; */
+ 
+ }
+/*     */
+
+ .app-body {
+    overflow: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 64px;
+}
+
+.app-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+ 
